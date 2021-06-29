@@ -1,0 +1,13 @@
+function bk = Bk(r)
+%BK Summary of this function goes here
+%   Calculates -pinv(J)*B(r) ;; r = altitude
+% TO-DO make Lat/Lon based on time and orbit instead of stationary
+
+ 
+    
+XYZ = geo2mag(Lat, Lon, r);
+
+bk = -inv(J) * XYZ 
+
+end
+

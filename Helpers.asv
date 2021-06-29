@@ -1,0 +1,7 @@
+
+
+
+% transformations for unit quaternion
+
+A_k_tilde = @(w, qk) G_q(qk) * Ak(w, qk) * G_q(qk).';
+B_k_tilde = @(w, qk) G_q(qK) * Bk(
